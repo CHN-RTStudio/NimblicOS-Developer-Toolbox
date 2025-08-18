@@ -1,4 +1,4 @@
-# NimblicOS 3.0 第三方程序开发指南
+# NimblicOS 第三方程序开发指南
 
 ## 什么是.NEP文件?
 
@@ -6,7 +6,7 @@
 
 ## 开发环境要求
 
-1. NimblicOS 3.0 或更高版本
+1. NimblicOS 0.3 或更高版本
 2. i686-elf-gcc 工具链
 3. 文本编辑器
 
@@ -17,7 +17,7 @@
 下面是一个简单的.NEP程序示例 `hello.c`：
 
 ```c
-/* NimblicOS 3.0 第三方程序示例 - hello.nep */
+/* NimblicOS 第三方程序示例 - hello.nep */
 
 #include "kernel/sysapi.h"
 
@@ -147,3 +147,4 @@ NimblicOS> hello
 4. 确认使用了正确的编译工具链
 
 希望这个指南能帮助你开发NimblicOS的第三方程序！如果你有任何问题或建议，请联系我们。
+rtstudio@zohomail.cn
