@@ -174,10 +174,6 @@ i686-elf-gcc -m32 -ffreestanding -fno-pie -nostdlib -nostartfiles \
   -o myapp.nep myapp.c
 ```
 
-### 构建系统集成
-
-NimblicOS 的 Makefile 已经配置为自动处理 NGP 和 NEP 应用程序的编译和链接。
-
 ## 安全注意事项
 
 为了保护系统安全，NimblicOS 采取了以下措施：
