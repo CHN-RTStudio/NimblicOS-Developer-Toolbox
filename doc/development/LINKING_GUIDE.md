@@ -44,10 +44,6 @@ i686-elf-gcc -m32 -ffreestanding -fno-pie -nostdlib -nostartfiles \
 2. 使用 `-ffreestanding` 和 `-nostdlib` 确保应用程序不依赖标准库
 3. 输出文件应具有 `.nep` 扩展名
 
-## 构建系统集成
-
-NimblicOS 的 Makefile 已经配置为自动处理 NGP 和 NEP 应用程序的编译和链接。
-
 ### Makefile 规则
 
 ```makefile
