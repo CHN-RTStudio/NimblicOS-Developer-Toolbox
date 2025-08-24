@@ -19,29 +19,6 @@
 - 可以获取系统信息和时间
 - 可以创建和管理进程
 
-## 核心 API
-
-NEP 应用程序主要使用以下 API 类别：
-
-### 文件系统 API
-
-- `int app_open_file(const char* filename, const char* mode)` - 打开文件
-- `int app_close_file(int file_id)` - 关闭文件
-- `int app_read_file(int file_id, void* buffer, int size)` - 读取文件
-- `int app_write_file(int file_id, const void* buffer, int size)` - 写入文件
-- `int app_delete_file(const char* filename)` - 删除文件
-
-### 系统信息 API
-
-- `unsigned int app_get_system_time()` - 获取系统时间
-- `void app_get_system_info(char* info_buffer)` - 获取系统信息
-
-### 进程管理 API
-
-- `int app_create_process(void (*entry_point)())` - 创建新进程
-- `void app_exit_process()` - 退出当前进程
-- `void app_yield()` - 让出CPU控制权
-
 ## NEP 应用程序结构
 
 NEP 应用程序通常具有以下结构：
@@ -94,6 +71,9 @@ int main() {
 }
 ```
 
+## 编译和运行
+
+要编译您的 NEP 应用程序，请使用 NimblicOS 构建系统（详情请参考 Makefile）。
 
 ## 最佳实践
 

@@ -18,35 +18,6 @@
 - 可以处理鼠标和键盘输入
 - 通过消息循环机制处理用户交互
 
-## 核心 API
-
-NGP 应用程序主要使用以下 API 类别：
-
-### 窗口管理 API
-
-- `int app_create_window(int x, int y, int width, int height, const char* title)` - 创建窗口
-- `void app_close_window(int window_id)` - 关闭窗口
-- `void app_show_window(int window_id)` - 显示窗口
-- `void app_hide_window(int window_id)` - 隐藏窗口
-- `void app_set_window_title(int window_id, const char* title)` - 设置窗口标题
-
-### 图形界面 API
-
-- `void app_draw_pixel(int x, int y, unsigned int color)` - 绘制像素
-- `void app_draw_line(int x1, int y1, int x2, int y2, unsigned int color)` - 绘制直线
-- `void app_draw_rect(int x, int y, int width, int height, unsigned int color)` - 绘制矩形边框
-- `void app_fill_rect(int x, int y, int width, int height, unsigned int color)` - 填充矩形
-- `void app_draw_circle(int x, int y, int radius, unsigned int color)` - 绘制圆形边框
-- `void app_fill_circle(int x, int y, int radius, unsigned int color)` - 填充圆形
-- `void app_draw_text(int x, int y, const char* text, unsigned int color)` - 绘制文本
-
-### 输入处理 API
-
-- `int app_is_mouse_clicked()` - 检查鼠标是否被点击
-- `int app_get_mouse_x()` - 获取鼠标X坐标
-- `int app_get_mouse_y()` - 获取鼠标Y坐标
-- `int app_is_key_pressed()` - 检查是否有按键被按下
-- `char app_get_pressed_key()` - 获取被按下的键值
 
 ## NGP 应用程序结构
 
@@ -101,6 +72,10 @@ int main() {
     return 0;
 }
 ```
+
+## 编译和运行
+
+要编译您的 NGP 应用程序，请使用 NimblicOS 构建系统（详情请参考 Makefile）。
 
 ## 最佳实践
 
