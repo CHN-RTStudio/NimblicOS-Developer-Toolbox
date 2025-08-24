@@ -43,6 +43,12 @@ const char* app_get_kernel_version();
 // 消息框API
 int app_message_box(const char* title, const char* message, int button_type);
 
+// 控件相关API
+void app_draw_button(int window_id, int x, int y, int width, int height, const char* text);
+void app_draw_label(int window_id, int x, int y, const char* text);
+void app_draw_editbox(int window_id, int x, int y, int width, int height);
+void app_draw_progressbar(int window_id, int x, int y, int width, int height, int progress);
+
 // 进程管理相关API
 int app_create_process(void (*entry_point)());
 void app_exit_process();
