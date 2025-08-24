@@ -40,6 +40,9 @@ unsigned int app_get_system_time();
 void app_get_system_info(char* info_buffer);
 const char* app_get_kernel_version();
 
+// 消息框API
+int app_message_box(const char* title, const char* message, int button_type);
+
 // 进程管理相关API
 int app_create_process(void (*entry_point)());
 void app_exit_process();
